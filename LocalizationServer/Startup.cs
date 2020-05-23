@@ -71,7 +71,7 @@ namespace LocalizationServer
 			
 			app.UseStaticFiles();
 
-			app.UseMiddleware<RequestCorrelationMiddleware>();
+			//app.UseMiddleware<RequestCorrelationMiddleware>();
 
 			// end localization
 

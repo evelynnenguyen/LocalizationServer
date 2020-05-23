@@ -8673,11 +8673,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Nguyen\\work\\DireGaming\\LocalizationServer\\LocalizationServer.csproj",
+      "projectUniqueName": "E:\\Nguyen\\work\\DireGaming\\DireGamingBackEnd\\LocalizationServer\\LocalizationServer.csproj",
       "projectName": "LocalizationServer",
-      "projectPath": "E:\\Nguyen\\work\\DireGaming\\LocalizationServer\\LocalizationServer.csproj",
+      "projectPath": "E:\\Nguyen\\work\\DireGaming\\DireGamingBackEnd\\LocalizationServer\\LocalizationServer.csproj",
       "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-      "outputPath": "E:\\Nguyen\\work\\DireGaming\\LocalizationServer\\obj\\",
+      "outputPath": "E:\\Nguyen\\work\\DireGaming\\DireGamingBackEnd\\LocalizationServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
