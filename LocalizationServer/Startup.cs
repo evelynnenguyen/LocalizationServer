@@ -31,7 +31,7 @@ namespace LocalizationServer
 		public void ConfigureServices(IServiceCollection services)
 		{
 			// Localization: add in the localizaton service which will enable using IStringLocalizer in the StudentsController
-			services.AddLocalization(options => options.ResourcesPath = "Resources/Controllers");
+			services.AddLocalization(options => options.ResourcesPath = "Resources");
 
 			services.AddControllers();
 
@@ -65,7 +65,7 @@ namespace LocalizationServer
 				SupportedCultures = supportedCultures,
 
 				// UI strings that we have localized.
-				//SupportedUICultures = supportedCultures
+				SupportedUICultures = supportedCultures
 			};
 
 			app.UseRequestLocalization(requestLocalizationOptions);
