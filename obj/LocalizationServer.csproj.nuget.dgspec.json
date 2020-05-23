@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Nguyen\\work\\DireGaming\\DireGamingBackEnd\\LocalizationServer\\LocalizationServer.csproj": {}
+    "E:\\Nguyen\\work\\DireGaming\\LocalizationServer\\LocalizationServer.csproj": {}
   },
   "projects": {
-    "E:\\Nguyen\\work\\DireGaming\\DireGamingBackEnd\\LocalizationServer\\LocalizationServer.csproj": {
+    "E:\\Nguyen\\work\\DireGaming\\LocalizationServer\\LocalizationServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Nguyen\\work\\DireGaming\\DireGamingBackEnd\\LocalizationServer\\LocalizationServer.csproj",
+        "projectUniqueName": "E:\\Nguyen\\work\\DireGaming\\LocalizationServer\\LocalizationServer.csproj",
         "projectName": "LocalizationServer",
-        "projectPath": "E:\\Nguyen\\work\\DireGaming\\DireGamingBackEnd\\LocalizationServer\\LocalizationServer.csproj",
+        "projectPath": "E:\\Nguyen\\work\\DireGaming\\LocalizationServer\\LocalizationServer.csproj",
         "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "E:\\Nguyen\\work\\DireGaming\\DireGamingBackEnd\\LocalizationServer\\obj\\",
+        "outputPath": "E:\\Nguyen\\work\\DireGaming\\LocalizationServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -80,6 +80,7 @@ namespace LocalizationServer.Controllers
         [HttpPost]
         public async Task<ActionResult<Student>> PostStudent(Student student)
         {
+            student.EnrollDate = DateTime.UtcNow;
             _context.Student.Add(student);
             await _context.SaveChangesAsync();
 
