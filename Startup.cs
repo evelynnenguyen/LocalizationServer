@@ -27,6 +27,9 @@ namespace LocalizationServer
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			// Localization: add in the localizaton service which will enable using IStringLocalizer in the StudentsController
+			services.AddLocalization(options => options.ResourcesPath = "Resources");
+
 			services.AddControllers();
 
 			var connection = Configuration.GetConnectionString("LocalizationServerContext");

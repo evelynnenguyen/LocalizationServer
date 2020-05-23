@@ -266,7 +266,8 @@ E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\Localizatio
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\LocalizationServer.Resources.Controllers.StudentsController.es.resources
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\LocalizationServer.Resources.Controllers.StudentsController.fr-FR.resources
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\LocalizationServer.csproj.GenerateResource.cache
-E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\LocalizationServer.MvcApplicationPartsAssemblyInfo.cache
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\en-US\LocalizationServer.resources.dll
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\es\LocalizationServer.resources.dll
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\fr-FR\LocalizationServer.resources.dll
+E:\Nguyen\work\DireGaming\LocalizationServer\bin\Debug\netcoreapp3.0\Autofac.dll
+E:\Nguyen\work\DireGaming\LocalizationServer\bin\Debug\netcoreapp3.0\Autofac.Extensions.DependencyInjection.dll

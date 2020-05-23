@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LocalizationServer;
 using LocalizationServer.Data;
+using System.Resources;
+using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Logging;
 
 namespace LocalizationServer.Controllers
 {
@@ -16,10 +19,25 @@ namespace LocalizationServer.Controllers
     {
         private readonly LocalizationServerContext _context;
 
-        public StudentsController(LocalizationServerContext context)
+        //Localization
+        private readonly ResourceManager _resourceManager;
+        private readonly IStringLocalizer<StudentsController> _localizer;
+        private readonly ILogger _logger;
+
+        public StudentsController(LocalizationServerContext context,
+                                   ResourceManager resourceManager,
+                                   IStringLocalizer<StudentsController> localizer,
+                                   ILogger<StudentsController> logger)
         {
             _context = context;
+
+            //Localization
+            _resourceManager = resourceManager;
+            _localizer = localizer;
+            _logger = logger;
         }
+
+
 
         // GET: api/Students
         [HttpGet]
