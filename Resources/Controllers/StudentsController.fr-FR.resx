@@ -138,7 +138,7 @@
   <data name="LoggingGetCustomer" xml:space="preserve">
     <value>Obtenir le client {0}</value>
   </data>
-  <data name="LoggingGetCustomers" xml:space="preserve">
+  <data name="LoggingGetStudents" xml:space="preserve">
     <value>Obtenir des clients</value>
   </data>
   <data name="LoggingUpdatedCustomer" xml:space="preserve">

@@ -117,37 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CustomerInfoInvalid1" xml:space="preserve">
+  <data name="CustomerInfoInvalid" xml:space="preserve">
     <value>CustomerInfo is not valid!</value>
   </data>
-  <data name="CustomerNotFound1" xml:space="preserve">
+  <data name="CustomerNotFound" xml:space="preserve">
     <value>Could not find customer with Id of {0}</value>
   </data>
-  <data name="LoggingAddedCustomer1" xml:space="preserve">
+  <data name="LoggingAddedCustomer" xml:space="preserve">
     <value>Successfully added customer {0}</value>
   </data>
-  <data name="LoggingAddingCustomer1" xml:space="preserve">
+  <data name="LoggingAddingCustomer" xml:space="preserve">
     <value>Adding customer {0}</value>
   </data>
-  <data name="LoggingDeletedCustomer1" xml:space="preserve">
+  <data name="LoggingDeletedCustomer" xml:space="preserve">
     <value>Successfully deleted customer {0}</value>
   </data>
-  <data name="LoggingDeletingCustomer1" xml:space="preserve">
+  <data name="LoggingDeletingCustomer" xml:space="preserve">
     <value>Deleting customer {0}</value>
   </data>
-  <data name="LoggingGetCustomer1" xml:space="preserve">
+  <data name="LoggingGetCustomer" xml:space="preserve">
     <value>Getting customer {0}</value>
   </data>
-  <data name="LoggingGetCustomers1" xml:space="preserve">
+  <data name="LoggingGetStudents" xml:space="preserve">
     <value>Getting Customers</value>
   </data>
-  <data name="LoggingUpdatedCustomer1" xml:space="preserve">
+  <data name="LoggingUpdatedCustomer" xml:space="preserve">
     <value>Successfully updated customer {0}</value>
   </data>
-  <data name="LoggingUpdatingCustomer1" xml:space="preserve">
+  <data name="LoggingUpdatingCustomer" xml:space="preserve">
     <value>Updating customer {0}</value>
   </data>
-  <data name="UnexpectedServerError1" xml:space="preserve">
+  <data name="UnexpectedServerError" xml:space="preserve">
     <value>Something unexpected went wrong during the request!</value>
   </data>
 </root>

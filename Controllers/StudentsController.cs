@@ -43,7 +43,7 @@ namespace LocalizationServer.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Student>>> GetStudent()
         {
-            _logger.LogInformation(BuildLogInfo(nameof(GetStudent), "LoggingGetCustomers"));
+            _logger.LogInformation(BuildLogInfo(nameof(GetStudent), "LoggingGetStudents"));
             return await _context.Student.ToListAsync();
         }
 
