@@ -116,10 +116,16 @@ namespace LocalizationServer.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult<Student>> DeleteStudent(int id)
         {
+            _logger.LogInformation(BuildLogInfo(nameof(DeleteStudent), "LoggingDeletingStudent", id));
+
             var student = await _context.Student.FindAsync(id);
+
+            Console.WriteLine(student);
+
             if (student == null)
             {
-                return NotFound();
+                _logger.LogError(BuildLogInfo(nameof(DeleteStudent), "StudentNotFound", id));
+                return new NotFoundObjectResult(_localizer["StudentNotFound", id].Value);
             }
 
             _context.Student.Remove(student);
@@ -136,6 +142,11 @@ namespace LocalizationServer.Controllers
         private string BuildLogInfo(string methodName, string resourceStringName, params object[] replacements)
         {
             return $"{methodName}: {_localizer[resourceStringName, replacements]}";
+        }
+
+        private string BuildStringFromResource(string resourceStringName, params object[] replacements)
+        {
+            return string.Format(_resourceManager.GetString(resourceStringName), replacements);
         }
     }
 }

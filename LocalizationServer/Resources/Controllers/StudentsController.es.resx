@@ -129,7 +129,7 @@
   <data name="LoggingDeletedCustomer" xml:space="preserve">
     <value>Cliente con éxito suprimido {0}</value>
   </data>
-  <data name="LoggingDeletingCustomer" xml:space="preserve">
+  <data name="LoggingDeletingStudent" xml:space="preserve">
     <value>Eliminar cliente {0}</value>
   </data>
   <data name="LoggingGetStudent" xml:space="preserve">
