@@ -41,10 +41,37 @@ namespace LocalizationServer
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 		{
+			//var timingLogger = loggerFactory.CreateLogger("CustomersAPI.Startup.TimingMiddleware");
+
 			if (env.IsDevelopment())
 			{
 				app.UseDeveloperExceptionPage();
 			}
+
+			// Localization
+			var supportedCultures = new[]
+			 {
+				new CultureInfo("en-US"),
+				new CultureInfo("fr-FR"),
+				new CultureInfo("es"),
+			 };
+
+			var requestLocalizationOptions = new RequestLocalizationOptions
+			{
+				DefaultRequestCulture = new RequestCulture("en-US"),
+
+				// Formatting numbers, dates, etc.
+				SupportedCultures = supportedCultures,
+
+				// UI strings that we have localized.
+				//SupportedUICultures = supportedCultures
+			};
+
+			app.UseRequestLocalization(requestLocalizationOptions);
+
+			//app.UseMiddleware<RequestCorrelationMiddleware>();
+
+			// end localization
 
 			app.UseHttpsRedirection();
 
@@ -56,28 +83,6 @@ namespace LocalizationServer
 			{
 				endpoints.MapControllers();
 			});
-
-			// Localization
-
-			var supportedCultures = new[]
-			  {
-                    new CultureInfo("en-US"),
-					new CultureInfo("fr-FR"),
-					new CultureInfo("es"),
-			  };
-
-			var requestLocalizationOptions = new RequestLocalizationOptions
-			{
-				DefaultRequestCulture = new RequestCulture("en-US"),
-
-				// Formatting numbers, dates, etc.
-				SupportedCultures = supportedCultures,
-
-				// UI strings that we have localized.
-				SupportedUICultures = supportedCultures
-			};
-
-			app.UseRequestLocalization(requestLocalizationOptions);
 		}
 	}
 }
