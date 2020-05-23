@@ -43,6 +43,7 @@ namespace LocalizationServer.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Student>>> GetStudent()
         {
+            _logger.LogInformation(BuildLogInfo(nameof(GetStudent), "LoggingGetCustomers"));
             return await _context.Student.ToListAsync();
         }
 
@@ -124,6 +125,14 @@ namespace LocalizationServer.Controllers
         private bool StudentExists(int id)
         {
             return _context.Student.Any(e => e.StudentId == id);
+        }
+
+        private string BuildLogInfo(string methodName, string resourceStringName, params object[] replacements)
+        {
+            // Localization: Here we are using .NET Core's IStringLocalizer to get the localized strings from
+            //               the .resx files instead of the ResourceManager. We will get the appropriate resource
+            //               based on the request culture.
+            return $"{methodName}: {_localizer[resourceStringName, replacements]}";
         }
     }
 }
