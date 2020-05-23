@@ -270,4 +270,10 @@ E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\en-US\Local
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\es\LocalizationServer.resources.dll
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\fr-FR\LocalizationServer.resources.dll
 E:\Nguyen\work\DireGaming\LocalizationServer\bin\Debug\netcoreapp3.0\Autofac.dll
-E:\Nguyen\work\DireGaming\LocalizationServer\bin\Debug\netcoreapp3.0\Autofac.Extensions.DependencyInjection.dll
+E:\Nguyen\work\DireGaming\LocalizationServer\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Nguyen\work\DireGaming\LocalizationServer\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Nguyen\work\DireGaming\LocalizationServer\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+E:\Nguyen\work\DireGaming\LocalizationServer\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Nguyen\work\DireGaming\LocalizationServer\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+E:\Nguyen\work\DireGaming\LocalizationServer\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\LocalizationServer.MvcApplicationPartsAssemblyInfo.cache

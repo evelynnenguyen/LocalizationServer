@@ -11,3 +11,6 @@ Body
 	"Summary": "This student comes from Vietnam"
 }
 
+To see the API response in other language:
+
+Note: I don't know much about other languages so the translation is not 100% correctly

@@ -17,17 +17,13 @@ namespace LocalizationServer
 	{
 		public static void Main(string[] args)
 		{
-			//CreateHostBuilder(args).Build().Run();
-
-			var host = new WebHostBuilder()
+			CreateHostBuilder(args)
 				.ConfigureServices(serviceCollection =>
 				{
 					serviceCollection.AddSingleton(new ResourceManager("LocalizationServer.Controllers.StudentsController",
 												   typeof(Startup).GetTypeInfo().Assembly));
 				})
-			.Build();
-
-			host.Run();
+				.Build().Run();
 		}
 
 		public static IHostBuilder CreateHostBuilder(string[] args) =>
