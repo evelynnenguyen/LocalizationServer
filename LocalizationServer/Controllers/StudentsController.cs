@@ -46,7 +46,9 @@ namespace LocalizationServer.Controllers
         }
 
         // GET: api/Students/5
-        // GET: https://localhost:44387/api/Students/4?culture=fr-FR
+        // GET: https://localhost:44387/api/Students/4000?culture=fr-FR
+        // GET: https://localhost:44387/api/Students/4000?culture=es
+        // GET: https://localhost:44387/api/Students/4000?culture=en-US
         [HttpGet("{id}")]
         public async Task<ActionResult<Student>> GetStudent(int id)
         {
@@ -109,6 +111,9 @@ namespace LocalizationServer.Controllers
         }
 
         // DELETE: api/Students/5
+        // DELETE: https://localhost:44387/api/Students/4000?culture=fr-FR
+        // DELETE: https://localhost:44387/api/Students/4000?culture=es
+        // DELETE: https://localhost:44387/api/Students/4000?culture=en-US
         [HttpDelete("{id}")]
         public async Task<ActionResult<Student>> DeleteStudent(int id)
         {

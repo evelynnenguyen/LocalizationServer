@@ -74,8 +74,6 @@ namespace LocalizationServer
 
 			app.UseMiddleware<RequestCorrelationMiddleware>();
 
-			// end localization
-
 			app.UseHttpsRedirection();
 
 			app.UseRouting();
