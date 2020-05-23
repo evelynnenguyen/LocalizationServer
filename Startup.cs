@@ -39,9 +39,9 @@ namespace LocalizationServer
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
 		{
-			//var timingLogger = loggerFactory.CreateLogger("CustomersAPI.Startup.TimingMiddleware");
+			var timingLogger = loggerFactory.CreateLogger("CustomersAPI.Startup.TimingMiddleware");
 
 			if (env.IsDevelopment())
 			{
@@ -68,8 +68,10 @@ namespace LocalizationServer
 			};
 
 			app.UseRequestLocalization(requestLocalizationOptions);
+			
+			app.UseStaticFiles();
 
-			//app.UseMiddleware<RequestCorrelationMiddleware>();
+			app.UseMiddleware<RequestCorrelationMiddleware>();
 
 			// end localization
 

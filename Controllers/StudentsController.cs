@@ -48,6 +48,7 @@ namespace LocalizationServer.Controllers
         }
 
         // GET: api/Students/5
+        // GET: https://localhost:44387/api/Students/4?culture=fr-FR
         [HttpGet("{id}")]
         public async Task<ActionResult<Student>> GetStudent(int id)
         {
