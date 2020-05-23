@@ -63,6 +63,9 @@ namespace LocalizationServer
 
 				// Formatting numbers, dates, etc.
 				SupportedCultures = supportedCultures,
+
+				// UI strings that we have localized.
+				SupportedUICultures = supportedCultures
 			};
 
 			app.UseRequestLocalization(requestLocalizationOptions);
@@ -70,6 +73,8 @@ namespace LocalizationServer
 			app.UseStaticFiles();
 
 			app.UseMiddleware<RequestCorrelationMiddleware>();
+
+			// end localization
 
 			app.UseHttpsRedirection();
 
