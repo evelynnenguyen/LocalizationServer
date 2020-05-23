@@ -51,11 +51,18 @@ namespace LocalizationServer.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Student>> GetStudent(int id)
         {
+            _logger.LogInformation(BuildLogInfo(nameof(GetStudent), "LoggingGetStudent", id));
+
             var student = await _context.Student.FindAsync(id);
 
             if (student == null)
             {
-                return NotFound();
+                var resourceManager = HttpContext.RequestServices.GetService(typeof(ResourceManager)) as ResourceManager;
+
+                _logger.LogError(BuildLogInfo(nameof(GetStudent), "StudentNotFound", id));
+
+                //return NotFound();
+                return new NotFoundObjectResult(_localizer["StudentNotFound", id].Value);
             }
 
             return student;

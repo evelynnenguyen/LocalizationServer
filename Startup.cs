@@ -12,6 +12,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using LocalizationServer.Data;
+using Microsoft.AspNetCore.Localization;
+using System.Globalization;
 
 namespace LocalizationServer
 {
@@ -54,6 +56,28 @@ namespace LocalizationServer
 			{
 				endpoints.MapControllers();
 			});
+
+			// Localization
+
+			var supportedCultures = new[]
+			  {
+                    new CultureInfo("en-US"),
+					new CultureInfo("fr-FR"),
+					new CultureInfo("es"),
+			  };
+
+			var requestLocalizationOptions = new RequestLocalizationOptions
+			{
+				DefaultRequestCulture = new RequestCulture("en-US"),
+
+				// Formatting numbers, dates, etc.
+				SupportedCultures = supportedCultures,
+
+				// UI strings that we have localized.
+				SupportedUICultures = supportedCultures
+			};
+
+			app.UseRequestLocalization(requestLocalizationOptions);
 		}
 	}
 }
