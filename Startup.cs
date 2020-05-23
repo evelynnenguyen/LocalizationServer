@@ -32,8 +32,11 @@ namespace LocalizationServer
 			var connection = Configuration.GetConnectionString("LocalizationServerContext");
 			services.AddDbContext<LocalizationServerContext>(options => options.UseSqlServer(connection));
 
-			//services.AddDbContext<LocalizationServerContext>(options =>
-			//        options.UseSqlServer(Configuration.GetConnectionString("LocalizationServerContext")));
+			services.AddSqlLocalization();
+			
+			services.AddMvc()
+				.AddViewLocalization()
+				.AddDataAnnotationsLocalization();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
