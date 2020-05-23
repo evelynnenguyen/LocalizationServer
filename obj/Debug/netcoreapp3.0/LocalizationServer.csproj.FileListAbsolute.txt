@@ -251,6 +251,7 @@ E:\Nguyen\work\DireGaming\LocalizationServer\bin\Debug\netcoreapp3.0\runtimes\wi
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\LocalizationServer.csprojAssemblyReference.cache
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\staticwebassets\LocalizationServer.StaticWebAssets.Manifest.cache
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\staticwebassets\LocalizationServer.StaticWebAssets.xml
+E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\LocalizationServer.MvcApplicationPartsAssemblyInfo.cache
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\LocalizationServer.AssemblyInfoInputs.cache
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\LocalizationServer.AssemblyInfo.cs
 E:\Nguyen\work\DireGaming\LocalizationServer\obj\Debug\netcoreapp3.0\LocalizationServer.RazorTargetAssemblyInfo.cache
