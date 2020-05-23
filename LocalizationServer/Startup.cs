@@ -14,6 +14,7 @@ using Microsoft.EntityFrameworkCore;
 using LocalizationServer.Data;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
+using RequestCorrelation;
 
 namespace LocalizationServer
 {
@@ -30,7 +31,7 @@ namespace LocalizationServer
 		public void ConfigureServices(IServiceCollection services)
 		{
 			// Localization: add in the localizaton service which will enable using IStringLocalizer in the StudentsController
-			services.AddLocalization(options => options.ResourcesPath = "Resources");
+			services.AddLocalization(options => options.ResourcesPath = "Resources/Controllers");
 
 			services.AddControllers();
 
@@ -71,7 +72,7 @@ namespace LocalizationServer
 			
 			app.UseStaticFiles();
 
-			//app.UseMiddleware<RequestCorrelationMiddleware>();
+			app.UseMiddleware<RequestCorrelationMiddleware>();
 
 			// end localization
 
