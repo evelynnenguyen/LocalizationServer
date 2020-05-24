@@ -1,6 +1,9 @@
 # LocalizationServer
 
 ## Current Database
+The database is hosted on Azure using its SQL Database services. This is a code-first database, therefore you can see the `Migration` folder with the history of changing occurred.
+
+Currently there is a table `Student` which records students' details, some mock data has been added. To see the current data, simply use the `GET` request, which is described in the next part.
 
 ## Current existing API
 In order to test the API, please clone and run the App locally and test the following APIs with Postman
@@ -48,17 +51,29 @@ I have set up 3 different languages that this simple API application supports: E
 
 *Note: I don't know much about other languages so the translation is not 100% correctly. However, of course we can adjust if needed*
 
-There are 2 ways to see this implementation:
+There are 2 ways to see this implementation:		
+**Please make sure that the id input into these requests must not be in the database.**
 
-GET:
-https://localhost:44387/api/Students/1000?culture=fr-FR
-https://localhost:44387/api/Students/1000?culture=es
-https://localhost:44387/api/Students/1000?culture=en-US
+`GET`: Simply call the following APIs
+* French: https://localhost:44387/api/Students/1000?culture=fr-FR
+* Spanish: https://localhost:44387/api/Students/1000?culture=es
+* English: https://localhost:44387/api/Students/1000?culture=en-US
 
-Or:
-  Header:
-    Accept-Language: fr-FR
-  Header:
-    Accept-Language: es
-  Header:
-    Accept-Language: en-US
+If there is no parameter `culture` defined, default English will be applied
+
+Or in the `Header` of the `GET` request, add in:
+* French: `Accept-Language: fr-FR`
+* Spanish: `Accept-Language: es`
+* English: `Accept-Language: en-US`
+
+`DELETE`:
+* French: https://localhost:44387/api/Students/1000?culture=fr-FR
+* Spanish: https://localhost:44387/api/Students/1000?culture=es
+* English: https://localhost:44387/api/Students/1000?culture=en-US
+
+If there is no parameter `culture` defined, default English will be applied
+
+Or in the `Header` of the `DELETE` request, add in:
+* French: `Accept-Language: fr-FR`
+* Spanish: `Accept-Language: es`
+* English: `Accept-Language: en-US`
