@@ -1,15 +1,36 @@
 # LocalizationServer
 
-POST:
+## Current Database
+
+## Current existing API
+`GET`: To get all students or get student by id:
+* https://localhost:44387/api/Students
+* https://localhost:44387/api/Students/1
+`PUT`:
+
+```json
+{
+	"StudentId": 1,
+	"FirstName": "Bob",
+	"LastName": "Michael 1",
+	"Email": "nn@abcmail.com",
+	"Summary": "This student comes from Vietnam"
+}
+```
+`POST`:
 Header
 Content-Type: application/json
 Body
+```json
 {
 	"FirstName": "Nguyen",
 	"LastName": "Nguyen",
 	"Email": "nn@abcmail.com",
 	"Summary": "This student comes from Vietnam"
 }
+```
+
+DELETE:
 
 ## To see the API response in other language:
 GET:
