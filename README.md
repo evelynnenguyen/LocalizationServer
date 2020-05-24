@@ -52,9 +52,9 @@ I have set up 3 different languages that this simple API application supports: E
 *Note: I don't know much about other languages so the translation is not 100% correctly. However, of course we can adjust if needed*
 
 There are 2 ways to see this implementation:		
-**Please make sure that the id input into these requests must not be in the database.**
+**Please make sure that the id input into these requests must not be in the database to see the difference**
 
-`GET`: Simply call the following APIs
+`GET`: Simply call the following APIs, we will see the error message is in different languages according to the option that we chose
 * French: https://localhost:44387/api/Students/1000?culture=fr-FR
 * Spanish: https://localhost:44387/api/Students/1000?culture=es
 * English: https://localhost:44387/api/Students/1000?culture=en-US
@@ -66,7 +66,7 @@ Or in the `Header` of the `GET` request, add in:
 * Spanish: `Accept-Language: es`
 * English: `Accept-Language: en-US`
 
-`DELETE`:
+`DELETE`: , we will see the error message is in different languages according to the option that we chose
 * French: https://localhost:44387/api/Students/1000?culture=fr-FR
 * Spanish: https://localhost:44387/api/Students/1000?culture=es
 * English: https://localhost:44387/api/Students/1000?culture=en-US
