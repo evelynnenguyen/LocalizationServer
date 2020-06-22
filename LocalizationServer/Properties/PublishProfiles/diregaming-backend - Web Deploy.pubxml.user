@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHkTsbP2lNUSBDdOFt8sMjgAAAAACAAAAAAAQZgAAAAEAACAAAACfE7Fv+Ob1LfoSwrT8nn0NJjlNJ0/tAPHe9sZ3JMOYAgAAAAAOgAAAAAIAACAAAABJWasRBY40tMFbGdtoQBB+S0q++fXqGT06cnADwn5CH4AAAAAggOEYXlfjCU9nyYWioFL+VHCKj6uQFaYvGKfCNxOvJBdkqTFVbbGVPtZ/xTvHWmN8sMcgPcBTdN7eVlR+XJngOKqqfmMBnj/TsHLlsXIkbbiksLr9fjxjZrq1syAYgQlzeexsCew26ysTKGehzUx+fPydpOxSMMsXv4xZ2w0pi0AAAAA4FN44yC/WgrelISZMoVNpPfRIpMXvDpT+/O+B84aSTqErDjOMYKq5KcLdU+sVT20jyCGDDZ2MMOuuN4ORCLFY</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="LocalizationServerContext">
+      <Value>Server=tcp:dire-gaming-back-end.database.windows.net,1433%3bInitial Catalog=DireGamingBackEndDb%3bPersist Security Info=False%3bUser ID=dire-gaming-back-end%3bPassword=Testing123%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

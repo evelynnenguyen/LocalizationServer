@@ -1,0 +1,8 @@
+E:\Nguyen\work\DireGaming\DireGamingBackEnd\RequestCorrelation\bin\Release\netcoreapp3.1\RequestCorrelation.deps.json
+E:\Nguyen\work\DireGaming\DireGamingBackEnd\RequestCorrelation\bin\Release\netcoreapp3.1\RequestCorrelation.dll
+E:\Nguyen\work\DireGaming\DireGamingBackEnd\RequestCorrelation\bin\Release\netcoreapp3.1\RequestCorrelation.pdb
+E:\Nguyen\work\DireGaming\DireGamingBackEnd\RequestCorrelation\obj\Release\netcoreapp3.1\RequestCorrelation.csprojAssemblyReference.cache
+E:\Nguyen\work\DireGaming\DireGamingBackEnd\RequestCorrelation\obj\Release\netcoreapp3.1\RequestCorrelation.AssemblyInfoInputs.cache
+E:\Nguyen\work\DireGaming\DireGamingBackEnd\RequestCorrelation\obj\Release\netcoreapp3.1\RequestCorrelation.AssemblyInfo.cs
+E:\Nguyen\work\DireGaming\DireGamingBackEnd\RequestCorrelation\obj\Release\netcoreapp3.1\RequestCorrelation.dll
+E:\Nguyen\work\DireGaming\DireGamingBackEnd\RequestCorrelation\obj\Release\netcoreapp3.1\RequestCorrelation.pdb

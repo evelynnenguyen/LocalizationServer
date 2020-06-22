@@ -12,5 +12,6 @@
     <WebStackScaffolding_DbContextTypeFullName>LocalizationServer.Data.LocalizationServerContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <ShowAllFiles>true</ShowAllFiles>
+    <NameOfLastUsedPublishProfile>diregaming-backend - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
